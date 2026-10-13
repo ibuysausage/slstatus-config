@@ -69,8 +69,8 @@ static const struct arg args[] = {
 	{ disk_perc,       "| %s%% ",      "/"        },
 	{ disk_used,       "%s ",          "/"        },
 	{ kernel_release,  "| Linux %s ",  NULL       },
-	{ ipv4,            "| %s ",        "w1p1s0"   },
-	{ wifi_essid,      "| %s ",        "w1p1s0",  },
+	{ ipv4,            "| %s ",        "wlp1s0"   },
+	{ wifi_essid,      "| %s ",        "wlp1s0",  },
 	{ battery_perc,    "| %s%% ",      "BAT0"     },
 	{ datetime,        "| %s ",        "%a %F %r" },
 };
