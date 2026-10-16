@@ -66,11 +66,11 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function format          argument */
-	{ disk_perc,       "^c#74C7EC^|^d^ %s%% ",      "/"        },
+	{ disk_perc,       "^c#F38BA8^|^d^ %s%% ",      "/"        },
 	{ disk_used,       "%s ",                       "/"        },
-	{ kernel_release,  "^c#74C7EC^|^d^ Linux %s ",  NULL       },
-	{ ipv4,            "^c#74C7EC^|^d^ %s ",        "wlp1s0"   },
-	{ wifi_essid,      "^c#74C7EC^|^d^ %s ",        "wlp1s0",  },
-	{ battery_perc,    "^c#74C7EC^|^d^ %s%% ",      "BAT0"     },
-	{ datetime,        "^c#74C7EC^|^d^ %s ",        "%a %F %r" },
+	{ kernel_release,  "^c#F38BA8^|^d^ Linux %s ",  NULL       },
+	{ ipv4,            "^c#F38BA8^|^d^ %s ",        "wlp1s0"   },
+	{ wifi_essid,      "^c#F38BA8^|^d^ %s ",        "wlp1s0",  },
+	{ battery_perc,    "^c#F38BA8^|^d^ %s%% ",      "BAT0"     },
+	{ datetime,        "^c#F38BA8^|^d^ %s ",        "%a %F %r" },
 };
