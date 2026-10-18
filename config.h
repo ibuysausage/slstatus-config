@@ -69,8 +69,8 @@ static const struct arg args[] = {
 	{ disk_perc,       "^c#F38BA8^|^d^ %s%% ",      "/"        },
 	{ disk_used,       "%s ",                       "/"        },
 	{ kernel_release,  "^c#F38BA8^|^d^ Linux %s ",  NULL       },
-	{ ipv4,            "^c#F38BA8^|^d^ %s ",        "wlp1s0"   },
-	{ wifi_essid,      "^c#F38BA8^|^d^ %s ",        "wlp1s0",  },
+	{ ipv4,            "^c#F38BA8^|^d^ %s ",        "wlo1"     },
+	{ wifi_essid,      "^c#F38BA8^|^d^ %s ",        "wlo1",    },
 	{ battery_perc,    "^c#F38BA8^|^d^ %s%% ",      "BAT0"     },
 	{ datetime,        "^c#F38BA8^|^d^ %s ",        "%a %F %r" },
 };
