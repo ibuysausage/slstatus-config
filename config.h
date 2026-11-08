@@ -64,13 +64,17 @@ static const char unknown_str[] = "n/a";
  * wifi_essid          WiFi ESSID                      interface name (wlan0)
  * wifi_perc           WiFi signal in percent          interface name (wlan0)
  */
+
+static const char vol[] = "wpctl get-volume @DEFAULT_SINK@ 2>/dev/null | awk '{printf \"%d%%\", $2*100; if (NF>2) printf \" %s\", $3}'";
+
 static const struct arg args[] = {
 	/* function format          argument */
+	{ run_command,     "^c#F38BA8^|^d^ %s ",         vol        },
 	{ disk_perc,       "^c#F38BA8^|^d^ %s%% ",      "/"        },
 	{ disk_used,       "%s ",                       "/"        },
 	{ kernel_release,  "^c#F38BA8^|^d^ Linux %s ",  NULL       },
 	{ ipv4,            "^c#F38BA8^|^d^ %s ",        "wlo1"     },
 	{ wifi_essid,      "^c#F38BA8^|^d^ %s ",        "wlo1",    },
 	{ battery_perc,    "^c#F38BA8^|^d^ %s%% ",      "BAT0"     },
-	{ datetime,        "^c#F38BA8^|^d^ %s ",        "%a %F %r" },
+	{ datetime,        "^c#F38BA8^|^d^ %s ^c#F38BA8^|^d^",     "%a %F %r" },
 };
